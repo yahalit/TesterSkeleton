@@ -1,0 +1,13 @@
+C:\Yahali\CSharpExample\CSharpExample\bin\debug\DftPlot.exe.config
+C:\Yahali\CSharpExample\CSharpExample\bin\debug\DftPlot.pdb
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\Plot.csproj.AssemblyReference.cache
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\Plot.CInput.resources
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\Plot.Figure.resources
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\Axis.Axis.resources
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\Plot.Prop.resources
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\Plot.Properties.Resources.resources
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\Plot.csproj.GenerateResource.cache
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\Plot.csproj.CoreCompileInputs.cache
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\Plot.csproj.CopyComplete
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\DftPlot.exe
+C:\Yahali\CSharpExample\PlotNew\Plot\obj\Debug\DftPlot.pdb

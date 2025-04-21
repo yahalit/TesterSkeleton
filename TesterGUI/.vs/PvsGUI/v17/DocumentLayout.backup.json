@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\GeneralTester\\PvsGUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\atpmainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\atpmainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\atpmainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\atpmainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|c:\\projects\\generaltester\\pvsgui\\csharpexample\\atptests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\atptests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|c:\\projects\\generaltester\\pvsgui\\csharpexample\\atptests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\atptests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\hostmessagestructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\hostmessagestructures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\pressureincalibtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\pressureincalibtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\testexcelhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\testexcelhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\vecops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\vecops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\guimessagestructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\guimessagestructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\pressureincalibtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\pressureincalibtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\graphs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\graphs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\pvsgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\pvsgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\pvsgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\pvsgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\pvsgui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\pvsgui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\interpretertraps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\interpretertraps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|C:\\Projects\\GeneralTester\\PvsGUI\\csharpexample\\cinterpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2B8D7B-50CE-4DA6-B8DD-A1A46460F72A}|CSharpExample\\TesterGUI.csproj|solutionrelative:csharpexample\\cinterpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AtpTests.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\AtpTests.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\AtpTests.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\AtpTests.cs [Design]",
+              "RelativeToolTip": "CSharpExample\\AtpTests.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T03:12:17.428Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PressureInCalibTest.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PressureInCalibTest.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\PressureInCalibTest.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PressureInCalibTest.cs",
+              "RelativeToolTip": "CSharpExample\\PressureInCalibTest.cs",
+              "ViewState": "AgIAAFoBAAAAAAAAAAA5wGUBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T19:30:00.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AtpTests.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\AtpTests.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\AtpTests.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\AtpTests.cs",
+              "RelativeToolTip": "CSharpExample\\AtpTests.cs",
+              "ViewState": "AgIAAKYCAAAAAAAAAAASwLoCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T14:01:50.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TestExcelHandler.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\TestExcelHandler.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\TestExcelHandler.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\TestExcelHandler.cs",
+              "RelativeToolTip": "CSharpExample\\TestExcelHandler.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAIwD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T14:00:11.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VecOps.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\VecOps.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\VecOps.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\VecOps.cs",
+              "RelativeToolTip": "CSharpExample\\VecOps.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:13:50.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AtpMainWindow.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\AtpMainWindow.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\AtpMainWindow.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\AtpMainWindow.cs [Design]",
+              "RelativeToolTip": "CSharpExample\\AtpMainWindow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:10:51.194Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AtpMainWindow.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\AtpMainWindow.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\AtpMainWindow.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\AtpMainWindow.cs",
+              "RelativeToolTip": "CSharpExample\\AtpMainWindow.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAFcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:08:01.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HostMessageStructures.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\HostMessageStructures.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\HostMessageStructures.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\HostMessageStructures.cs",
+              "RelativeToolTip": "CSharpExample\\HostMessageStructures.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:07:04.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GUIMessageStructure.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\GUIMessageStructure.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\GUIMessageStructure.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\GUIMessageStructure.cs",
+              "RelativeToolTip": "CSharpExample\\GUIMessageStructure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:06:57.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PressureInCalibTest.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PressureInCalibTest.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\PressureInCalibTest.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PressureInCalibTest.cs [Design]",
+              "RelativeToolTip": "CSharpExample\\PressureInCalibTest.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:06:35.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Graphs.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\Graphs.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\Graphs.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\Graphs.cs [Design]",
+              "RelativeToolTip": "CSharpExample\\Graphs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:06:30.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PvsGUI.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PvsGUI.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\PvsGUI.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PvsGUI.cs",
+              "RelativeToolTip": "CSharpExample\\PvsGUI.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAIAwwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T05:31:13.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PvsGUI.Designer.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PvsGUI.Designer.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\PvsGUI.Designer.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PvsGUI.Designer.cs",
+              "RelativeToolTip": "CSharpExample\\PvsGUI.Designer.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAnwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T04:49:28.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InterpreterTraps.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\InterpreterTraps.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\InterpreterTraps.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\InterpreterTraps.cs",
+              "RelativeToolTip": "CSharpExample\\InterpreterTraps.cs",
+              "ViewState": "AgIAAO4BAAAAAAAAAAAnwPoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T04:42:09.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CInterpreter.cs",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\CInterpreter.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\CInterpreter.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\CInterpreter.cs",
+              "RelativeToolTip": "CSharpExample\\CInterpreter.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAIwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T04:42:01.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PvsGUI.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PvsGUI.cs",
+              "RelativeDocumentMoniker": "CSharpExample\\PvsGUI.cs",
+              "ToolTip": "C:\\Projects\\GeneralTester\\PvsGUI\\CSharpExample\\PvsGUI.cs [Design]",
+              "RelativeToolTip": "CSharpExample\\PvsGUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T04:18:32.923Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

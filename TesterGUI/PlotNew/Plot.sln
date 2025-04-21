@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plot", "Plot\Plot.csproj", "{4E8B9C18-DB39-4959-A762-5A8FE2F6F33A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C713B31-274A-4EF1-A75C-6EB4B1E57C32}"
+	ProjectSection(SolutionItems) = preProject
+		Icon1.ico = Icon1.ico
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E8B9C18-DB39-4959-A762-5A8FE2F6F33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8B9C18-DB39-4959-A762-5A8FE2F6F33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8B9C18-DB39-4959-A762-5A8FE2F6F33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8B9C18-DB39-4959-A762-5A8FE2F6F33A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC1D5207-67E1-4571-BA98-0A8E8C1261B8}
+	EndGlobalSection
+EndGlobal

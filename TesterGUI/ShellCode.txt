@@ -1,0 +1,8 @@
+
+# Genaral routing: 
+cd C:\Projects\PVS\Software\PVS\PvsGUI
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+# Unblock by-internet resx files 
+.\unblock.ps1
+
