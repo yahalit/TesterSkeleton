@@ -18,11 +18,11 @@ using DocumentFormat.OpenXml.Math;
 using ZedGraph;
 using System.IO;
 using ClosedXML.Excel;
-using static PvsGUI.Gadgets;
+using static TesterGUI.Gadgets;
 using System.Net;
 using System.Runtime.CompilerServices;
 
-namespace PvsGUI
+namespace TesterGUI
 {
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0044:Make field read only", Justification = "Fields are used as non-readonly elsewhere")]
 

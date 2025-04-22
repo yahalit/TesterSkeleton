@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PvsGUI
+namespace TesterGUI
 {
 
     public struct GetValueResults

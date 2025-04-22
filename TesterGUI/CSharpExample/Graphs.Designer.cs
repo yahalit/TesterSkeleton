@@ -1,7 +1,7 @@
 ﻿using ZedGraph;
 
 
-namespace PvsGUI
+namespace TesterGUI
 {
     partial class Graphs
     {

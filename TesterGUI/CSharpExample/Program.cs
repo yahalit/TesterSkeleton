@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
-namespace PvsGUI
+namespace TesterGUI
 {
     static class Program
     {
@@ -18,9 +18,9 @@ namespace PvsGUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            CPvsGUI MyPvsGUI = new CPvsGUI() ;
-            Application.Run(MyPvsGUI);
-            MyPvsGUI.Lastwill(); 
+            CTesterGUI MyTesterGUI = new CTesterGUI() ;
+            Application.Run(MyTesterGUI);
+            MyTesterGUI.Lastwill(); 
         }
     }
 }

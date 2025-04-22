@@ -7,9 +7,9 @@ using System.Threading;
 using System.IO.Ports;
 using System.IO;
 using ClosedXML.Excel;
-using static PvsGUI.CAdc8;
+using static TesterGUI.CAdc8;
 
-namespace PvsGUI
+namespace TesterGUI
 {
     // Structure of the parts of a MODBUS message 
     public struct CModBusStr

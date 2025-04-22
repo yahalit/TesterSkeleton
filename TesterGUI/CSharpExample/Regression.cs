@@ -14,7 +14,7 @@ using MathNet.Numerics.LinearAlgebra;
 using DocumentFormat.OpenXml.Math;
 using System.IO;
 
-namespace PvsGUI
+namespace TesterGUI
 {
     public partial class CRegression : Form
     {

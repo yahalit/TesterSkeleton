@@ -14,15 +14,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Interop;
 using ZedGraph;
-using static PvsGUI.CRelay32;
-using static PvsGUI.XLSGraph;
+using static TesterGUI.CRelay32;
+using static TesterGUI.XLSGraph;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using System.IO;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Spreadsheet;
 using MathNet.Numerics.Distributions;
 
-namespace PvsGUI
+namespace TesterGUI
 {
     partial class CAtpMainWindow
     {

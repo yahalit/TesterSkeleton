@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using ClosedXML.Excel;
 using DocumentFormat.OpenXml.Drawing;
 
-namespace PvsGUI
+namespace TesterGUI
 {
 
     public class CPowerRelay : CRelay32

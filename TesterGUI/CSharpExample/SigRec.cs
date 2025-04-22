@@ -16,7 +16,7 @@ using csmatio.types;
 
 
 
-namespace PvsGUI
+namespace TesterGUI
 {
     public partial class SigRec : Form
     {

@@ -13,7 +13,7 @@ using System.IO;
 using System.Text.Json;
 using MathNet.Numerics;
 
-namespace PvsGUI
+namespace TesterGUI
 {
     public partial class CPressureInCalibTest : Form
     {

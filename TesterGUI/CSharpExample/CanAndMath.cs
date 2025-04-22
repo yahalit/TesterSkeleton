@@ -17,7 +17,7 @@ using MathNet.Numerics.LinearAlgebra;
 
 //System.Runtime.InteropServices
 
-namespace PvsGUI
+namespace TesterGUI
 {
     public class KvaserCom
     {

@@ -9,7 +9,7 @@ using System.Threading;
 using System.Windows.Forms;
 
 
-namespace PvsGUI
+namespace TesterGUI
 {
 
 

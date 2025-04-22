@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace PvsGUI
+namespace TesterGUI
 {
     public partial class CHostInterpreter
     {

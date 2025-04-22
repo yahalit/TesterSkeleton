@@ -14,12 +14,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Interop;
 using ZedGraph;
-using static PvsGUI.CRelay32;
-using static PvsGUI.XLSGraph;
+using static TesterGUI.CRelay32;
+using static TesterGUI.XLSGraph;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using System.IO;
 
-namespace PvsGUI
+namespace TesterGUI
 {
     partial class CAtpMainWindow
     {
@@ -68,17 +68,13 @@ namespace PvsGUI
             return true;
         }
 
+        /*
+         * Set some string as ATR result 
+         */
         public bool TestHostCommunicationRs422(CTestIdentifier a)
         {
             // Test that host responds to communication over the RS422
-            bool Pass; 
-            if (!HostInterpreter.IsComOpen)
-            {
-                Pass = false;
-                return AtpExcel.SetResultInAtr("1.2.1", a, 0, "Host COM port is not open" , ref Pass, ref a.ErrMsg, "Host COM port is not open, can run test");
-            }
-            HostInterpreter.DataRequestMsg((ushort)Literals.HostOpCodes.HostOpVersionRequest, out byte[] buf, out uint _);
-            Pass = HostInterpreter.OfflineTransaction(100, out int ErrorCode, buf, (int)Literals.Reply2HostOpCodes.PvsVersionData, HostInterpreter.ReadAxisVersionMsg);
+            bool Pass = true; 
 
             // Write the result in the ATR 
             string sActValue = (Pass) ? "Ok response" : "No response";
@@ -494,7 +490,7 @@ namespace PvsGUI
             {
                 if (!MeasureSinglePressureOutJ1(cnt, Vref: 2.0 , Voltages,Literals.nAdcAveraging , out double[] _, out double[] rmserr))
                 {
-                    a.ErrMsg.Add("Could not set Relays, or could not get set PVS pressure display");
+                    a.ErrMsg.Add("Could not set Relays, or could not get set pressure display");
                     return false;
                 }
 

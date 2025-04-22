@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.IO;
 using System.Windows.Forms;
 
-namespace PvsGUI
+namespace TesterGUI
 {
     public class CRecorder
     {

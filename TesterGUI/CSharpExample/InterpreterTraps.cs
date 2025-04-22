@@ -9,7 +9,7 @@ using DocumentFormat.OpenXml.Office.CustomUI;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace PvsGUI
+namespace TesterGUI
 {
 
     public class ManualResetEventHandler

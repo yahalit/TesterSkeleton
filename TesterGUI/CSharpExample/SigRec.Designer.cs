@@ -1,5 +1,5 @@
 ﻿
-namespace PvsGUI
+namespace TesterGUI
 {
     partial class SigRec
     {

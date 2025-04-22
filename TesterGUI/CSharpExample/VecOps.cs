@@ -24,7 +24,7 @@ using Plot;
 using DocumentFormat.OpenXml.Bibliography;
 
 
-namespace PvsGUI
+namespace TesterGUI
 {
 
     /*
@@ -302,10 +302,10 @@ namespace PvsGUI
         /* 
          * CheckLegitimateAtrFileName: Test that an ATR Excel file name is legitimate, and parse its attributes 
          */
-        static public bool CheckLegitimateAtrFileName(string input, out string errmsg , out AtrAttrib attr)
+        static public bool CheckLegitimateAtrFileName(string ProjectName , string input, out string errmsg , out AtrAttrib attr)
         {
             bool RetVal = true ; 
-            string pattern = @"^PVS_ATR_SN_(\d+)_(\d{4})_(\d{2})_(\d{2})_R(\d+)$";
+            string pattern = @"^"+ ProjectName + @"_ATR_SN_(\d+)_(\d{4})_(\d{2})_(\d{2})_R(\d+)$";
             attr = new AtrAttrib();
             if ( !input.EndsWith(".xlsx", StringComparison.OrdinalIgnoreCase) )
             {

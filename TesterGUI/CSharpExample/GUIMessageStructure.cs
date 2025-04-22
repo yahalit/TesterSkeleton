@@ -16,7 +16,7 @@ using DocumentFormat.OpenXml.Office2016.Excel;
 using DocumentFormat.OpenXml.Bibliography;
 using DocumentFormat.OpenXml.Wordprocessing;
 
-namespace PvsGUI
+namespace TesterGUI
 {
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]

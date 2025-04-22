@@ -1,4 +1,4 @@
-﻿namespace PvsGUI
+﻿namespace TesterGUI
 {
     partial class CAtpMainWindow
     {
@@ -690,7 +690,7 @@
             // 
             // pictureLEDConnectGUIATP
             // 
-            this.pictureLEDConnectGUIATP.Image = global::PvsGUI.Properties.Resources.GRAYLED;
+            this.pictureLEDConnectGUIATP.Image = global::TesterGUI.Properties.Resources.GRAYLED;
             this.pictureLEDConnectGUIATP.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureLEDConnectGUIATP.InitialImage")));
             this.pictureLEDConnectGUIATP.Location = new System.Drawing.Point(530, 98);
             this.pictureLEDConnectGUIATP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -701,7 +701,7 @@
             // 
             // pictureLEDConnectHostATP
             // 
-            this.pictureLEDConnectHostATP.Image = global::PvsGUI.Properties.Resources.GRAYLED;
+            this.pictureLEDConnectHostATP.Image = global::TesterGUI.Properties.Resources.GRAYLED;
             this.pictureLEDConnectHostATP.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureLEDConnectHostATP.InitialImage")));
             this.pictureLEDConnectHostATP.Location = new System.Drawing.Point(529, 57);
             this.pictureLEDConnectHostATP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -712,7 +712,7 @@
             // 
             // pictureLEDConnectTestATP
             // 
-            this.pictureLEDConnectTestATP.Image = global::PvsGUI.Properties.Resources.GRAYLED;
+            this.pictureLEDConnectTestATP.Image = global::TesterGUI.Properties.Resources.GRAYLED;
             this.pictureLEDConnectTestATP.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureLEDConnectTestATP.InitialImage")));
             this.pictureLEDConnectTestATP.Location = new System.Drawing.Point(530, 10);
             this.pictureLEDConnectTestATP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);

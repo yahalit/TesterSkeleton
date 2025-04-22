@@ -22,14 +22,14 @@ using System.Windows.Interop;
 using OfficeOpenXml.Packaging.Ionic.Zlib;
 using System.Threading;
 using System.Management;
-using static PvsGUI.CAtpExcel;
+using static TesterGUI.CAtpExcel;
 using DocumentFormat.OpenXml.ExtendedProperties;
 using DocumentFormat.OpenXml.Bibliography;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 //using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
-namespace PvsGUI
+namespace TesterGUI
 {
 
     // Test information - Location in ATR 
@@ -58,22 +58,38 @@ namespace PvsGUI
         bool IsGUIComOpen;
         bool IsHostComOpen;
         bool IsTesterComOpen;
-        bool BTEchPasswordEntered = true  ; // Vandalisation 
+        bool BTEchPasswordEntered    ;
+        readonly string TechnicianPassWord;
+        readonly string BTEchPasswordClue; 
+
         readonly string DefaultCalibPath;
         readonly string DefaultCalibFileName;
+
+        readonly string ProjectName; 
+
         //double NumericUserAnswer;
         GetValueResults UserAnswer   ;
         bool UserApporoved;
         public CRecorder Recorder = CRecorder.Instance; //  new CInterpreter(mutex);
         public string RootFilePath;
 
-        public CAtpMainWindow( string _DefaultAtrPath, string _ATRTemplatePath, string _DefaultCalibPath , string _RootFilePath )
+        public CAtpMainWindow(string _ProjectName, string _DefaultAtrPath, string _ATRTemplatePath, string _DefaultCalibPath , string _RootFilePath )
         {
             InitializeComponent();
+            ProjectName = _ProjectName ;
+
+            //  !! Do NOT remove or chage this Entry Point comment !!
+            // [EP4] Decide if a password is required and set password 
+            ////////////////////////////////////////////
+            BTEchPasswordEntered = true;  // Set false if password is required
+            TechnicianPassWord = "Pafuzlachi";
+            BTEchPasswordClue = "The terrible beast that is afraid of Omer";
+
+
             DefaultAtrPath = _DefaultAtrPath;
             ATRTemplatePath = _ATRTemplatePath;
             labelAtrDirectoryPath.Text= _DefaultAtrPath;
-            textBoxATRFileName.Text = "PVS_ATR_SN_xxx_" + DateTime.Now.ToString("yyyy_MM_dd") + @"_R1.xlsx";
+            textBoxATRFileName.Text = ProjectName+ "_ATR_SN_xxx_" + DateTime.Now.ToString("yyyy_MM_dd") + @"_R1.xlsx";
             DefaultCalibPath = _DefaultCalibPath;
             DefaultCalibFileName = DefaultCalibPath + @"\" + @"TesterCalib_1.xlsx";
             labelTesterCalibrationFile.Text = DefaultCalibFileName;
@@ -167,34 +183,33 @@ namespace PvsGUI
             Gadgets.AddToolTip2Control(buttonConnectTester, new string[] {"Pressing this button will connect all 3 UART connections:","GUI, Host simulator, and Tester.",
                 "Be sure to set all the COM ports before, and that in the main dialog GUI is disconnected.","The lamps at green will verify port connections."});
 
-            Gadgets.AddToolTip2Control(textBoxATRFileName, new string[] {"This is the name of the ATR file.","It is composed as PVS_ATR_SN_xxx_yyyy_mm_dd_Rrr.xlsx.",
+            Gadgets.AddToolTip2Control(textBoxATRFileName, new string[] {"This is the name of the ATR file.","It is composed as "+ProjectName+"_ATR_SN_xxx_yyyy_mm_dd_Rrr.xlsx.",
                 "xxx is the SN, yyyy the year, mm the month, dd the day, and rr the ATR re-test revision.","The ATR will be also published as PDF with the same name","Other than the .pdf extension"});
-            
 
+            //  !! Do NOT remove or chage this Entry Point comment !!
+            // [EP3] Read details of available COM ports 
+            ////////////////////////////////////////////
             Gadgets.UpdateAvailableComPorts(comboBoxPortsGUIATP);
             Gadgets.UpdateAvailableComPorts(comboBoxPortsHostATP);
             Gadgets.UpdateAvailableComPorts(comboBoxPortsTesterModbusATP);
 
             RestoreComs();
         }
-        /*
-                private void UpdateAvailableComPorts(ComboBox combo)
-                {
-                    int selindex = Math.Max(combo.SelectedIndex,0);
-                    string[]  ports = SerialPort.GetPortNames();
-                    if (ports.Length == 0)
-                    {
-                        string[] NoPort = { "None" };
-                        ports = NoPort;
-                    }
-                    combo.Items.Clear();
-                    foreach (string port in ports)
-                    {
-                        combo.Items.Add(port);
-                    }
-                    combo.SelectedIndex = Math.Min(selindex, combo.Items.Count - 1);
-                }
-        */
+
+
+        /* 
+         * ConnectPort: Connect a COM port 
+         * Arguments:
+         * combo: The combo box in which the COM description string is selected
+         * LED  : The LED to green when port is connected
+         * baud : Required baud rate 
+         * IsModbus: true for modbus connection 
+         * 
+         * Returns: 
+         * true if succesful 
+         * bComOpen: Indicator that the port is indeed opened 
+         * msg : a string reflecting opening success
+         */
         private bool ConnectPort (ComboBox combo, PictureBox LED, ref bool bComOpen , int baud , out string msg ,bool IsModbus  )
         {
             string com = (string)combo.Items[combo.SelectedIndex];
@@ -233,6 +248,15 @@ namespace PvsGUI
         }
 
 
+        /* 
+        * DisconnectPort: Disconnect a COM port 
+        * Arguments:
+        * LED  : The LED to green when port is connected
+        * IsModbus: true for modbus connection 
+        * 
+        * Returns: 
+        * bComOpen: Indicator that the port is indeed opened 
+        */
         private void DisconnectPort( PictureBox LED, ref bool bComOpen , bool IsModbus)
         {
             try
@@ -257,6 +281,9 @@ namespace PvsGUI
 
 
 
+        /* 
+         * Click_CheckAll: Check all the tests to the active state
+         */
         private void Click_CheckAll(object sender, EventArgs e)
         {
             foreach (CheckBox cb in TestCheckboxList)
@@ -265,6 +292,9 @@ namespace PvsGUI
             }
         }
 
+        /* 
+        * Click_UncheckAll: UnCheck all the tests to the inactive state
+        */
         private void Click_UncheckAll(object sender, EventArgs e)
         {
             foreach (CheckBox cb in TestCheckboxList)
@@ -300,10 +330,15 @@ namespace PvsGUI
         }
 
 
+        /* 
+        * Main ATP running loop
+        * Goes over all checked test functions and run them 
+        */
         private void Click_StartATP(object sender, EventArgs e)
         {
             CTestIdentifier TestId;
 
+            // If password is enabled, require it.
             if ( !BTEchPasswordEntered )
             {
                 GetValueResults rslt =
@@ -311,41 +346,42 @@ namespace PvsGUI
 
                 string TrimmedResult = rslt.s.Trim();
 
-                if (!"Pafuzlachi".Equals(TrimmedResult))
+                if (!TechnicianPassWord.Equals(TrimmedResult))
                 {
                     textBoxMessageToHumanity.Lines = new string[] {
                     "Testing is only by technician password",
-                    "Clue: The terrible beast that is afraid of Omer" ,
+                    "Clue: " + BTEchPasswordClue,  
                     "Sorry" };
                     return;
                 }
                 BTEchPasswordEntered = true; 
             }
 
-            if (!Gadgets.CheckLegitimateAtrFileName(textBoxATRFileName.Text, out string errmsg, out _))
+            // Verify legality of ATR file name 
+            if (!Gadgets.CheckLegitimateAtrFileName(ProjectName,textBoxATRFileName.Text, out string errmsg, out _))
             {
                 MessageBox.Show(this, "Ilegal file name, see details in message lines below");
                 textBoxMessageToHumanity.Lines = new string[] {
-                        $"Error: {errmsg} : File name fomat must be like PVS_ATR_SN_001_2025_01_14_R1",
-                        "Format: PVS_ATR_SN_[Serial number]_[Year]_[Month]_[Day]_R[Revision]",
+                        $"Error: {errmsg} : File name fomat must be like "+ProjectName+"_ATR_SN_001_2025_01_14_R1",
+                        "Format: "+ProjectName+"_ATR_SN_[Serial number]_[Year]_[Month]_[Day]_R[Revision]",
                         "Serial number: 1 to 1000, Year 2000 to 2200, Month 1 to 12, Day 1 to 31, Revision 0 to 1000",
                         "Where numbers should be placed for each of the square brackets"
                 };
                 return;
             }
 
+            // Compose the full path for the ATR file and make it common for all test descriptors
             string AtrFileName = labelAtrDirectoryPath.Text + @"\" + textBoxATRFileName.Text;
             foreach (CheckBox cb in TestCheckboxList)
             {
                 (cb.Tag as CTestIdentifier).ExcelFileName = AtrFileName;
                 (cb.Tag as CTestIdentifier).TempFolder = labelAtrDirectoryPath.Text;
-
 			}
 
+            // Deal the front page of the ATR excel
+            // ////////////////////////////////////
 
-
-
-            // Read the front page of the ATR excel 
+            // Verify ATR file is accesible (existing and not open by other means) 
             if (!Gadgets.IsExcelFileAccessible(labelAtrDirectoryPath.Text  + @"\" + textBoxATRFileName.Text , out string msg))
             {
                 textBoxMessageToHumanity.Lines = new string[] {
@@ -362,6 +398,7 @@ namespace PvsGUI
                     $"Error: {errmsg} "};
                 return;
             }
+
             AtpExcel.TestForm.CpuSwVersion = (int)Interpreter.Answer_GetUnitData.SimSubverPatch;
 
             // Open tester calibration file 
@@ -598,12 +635,12 @@ namespace PvsGUI
             string templateFilePath = ATRTemplatePath ; // Template file
             string errmsg;
 
-            if (! Gadgets.CheckLegitimateAtrFileName(textBoxATRFileName.Text, out errmsg, out _)) 
+            if (! Gadgets.CheckLegitimateAtrFileName(ProjectName,textBoxATRFileName.Text, out errmsg, out _)) 
             {
                 MessageBox.Show(this,"Ilegal file name, see details in message lines below"); 
                 textBoxMessageToHumanity.Lines = new string[] {
-                        $"Error: {errmsg} : File name fomat must be like PVS_ATR_SN_001_2025_01_14_R1",
-                        "Format: PVS_ATR_SN_[Serial number]_[Year]_[Month]_[Day]_R[Revision]",
+                        $"Error: {errmsg} : File name fomat must be like "+ProjectName+"_ATR_SN_001_2025_01_14_R1",
+                        "Format: "+ProjectName+"_ATR_SN_[Serial number]_[Year]_[Month]_[Day]_R[Revision]",
                         "Serial number: 1 to 1000, Year 2000 to 2200, Month 1 to 12, Day 1 to 31, Revision 0 to 1000", 
                         "Where numbers should be placed for each of the square brackets"
                 };
@@ -644,12 +681,12 @@ namespace PvsGUI
             string filename = null;
             if (Gadgets.SelectExcelFile(labelAtrDirectoryPath.Text, ref filename))
             {
-                    if (!Gadgets.CheckLegitimateAtrFileName(filename, out string errmsg, out _))
+                    if (!Gadgets.CheckLegitimateAtrFileName(ProjectName,filename, out string errmsg, out _))
                     {
                         MessageBox.Show(this, "Ilegal file name, see details in message lines below");
                         textBoxMessageToHumanity.Lines = new string[] {
-                            $"Error: {errmsg} : File name fomat must be like PVS_ATR_SN_001_2025_01_14_R1",
-                            "Format: PVS_ATR_SN_[Serial number]_[Year]_[Month]_[Day]_R[Revision]",
+                            $"Error: {errmsg} : File name fomat must be like "+ProjectName+"_ATR_SN_001_2025_01_14_R1",
+                            "Format: "+ProjectName+"_ATR_SN_[Serial number]_[Year]_[Month]_[Day]_R[Revision]",
                             "Serial number: 1 to 1000, Year 2000 to 2200, Month 1 to 12, Day 1 to 31, Revision 0 to 1000",
                             "Where numbers should be placed for each of the square brackets"
                     };

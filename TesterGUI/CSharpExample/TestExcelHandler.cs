@@ -26,7 +26,7 @@ using DocumentFormat.OpenXml.Drawing.Diagrams;
 */ 
 
 
-namespace PvsGUI
+namespace TesterGUI
 {
     // Summarize the ATR statistics
     public struct CAtrStatistics

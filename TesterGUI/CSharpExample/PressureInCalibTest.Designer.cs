@@ -1,4 +1,4 @@
-﻿namespace PvsGUI
+﻿namespace TesterGUI
 {
     partial class CPressureInCalibTest
     {

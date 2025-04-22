@@ -1,5 +1,5 @@
 ﻿
-namespace PvsGUI
+namespace TesterGUI
 {
     partial class CAtpUnits
     {
@@ -163,7 +163,7 @@ namespace PvsGUI
             // 
             // pictureLEDConnectATP
             // 
-            this.pictureLEDConnectATP.Image = global::PvsGUI.Properties.Resources.GRAYLED;
+            this.pictureLEDConnectATP.Image = global::TesterGUI.Properties.Resources.GRAYLED;
             this.pictureLEDConnectATP.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureLEDConnectATP.InitialImage")));
             this.pictureLEDConnectATP.Location = new System.Drawing.Point(435, 52);
             this.pictureLEDConnectATP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

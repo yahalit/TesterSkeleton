@@ -189,7 +189,7 @@ public static partial class Literals
     }
 }
 
-namespace PvsGUI
+namespace TesterGUI
 {
 
     [StructLayout(LayoutKind.Sequential, Pack = 1)]

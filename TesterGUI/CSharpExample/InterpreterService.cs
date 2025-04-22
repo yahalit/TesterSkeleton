@@ -14,7 +14,7 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Globalization;
 
-namespace PvsGUI
+namespace TesterGUI
 {
     public class CMsgTrap
     {

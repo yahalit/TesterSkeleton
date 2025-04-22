@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO.Ports;
 using System.Threading;
 
-namespace PvsGUI
+namespace TesterGUI
 {
 
     public class CMessage

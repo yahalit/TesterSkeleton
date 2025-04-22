@@ -11,7 +11,7 @@ using ZedGraph;
 using System.Threading;
 
 
-namespace PvsGUI
+namespace TesterGUI
 {
     public struct FrameDescriptor
         {
